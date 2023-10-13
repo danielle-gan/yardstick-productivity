@@ -1,0 +1,105 @@
+:root {
+    --primary: #9D5E76;
+    --secondary: #d1b1bF;
+    --tertiary: #F6ECF0;
+    --accent1: #E79A7C;
+    --font: #3a2b30;
+}
+
+body {
+    background-color: var(--secondary);
+    color: var(--font);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary);
+    margin: 0;
+    width: 100%;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 4em;
+    justify-self: center;
+}
+
+h3 {
+    font-size: 2.5em;
+    margin-top: 0px;
+}
+
+p {
+    margin: 0% 15%;
+    font-size: 2em;
+}
+
+li {
+    text-align: left;
+    font-size: 2em;
+    margin-top: 5px;
+}
+
+.section {
+margin-top: 3%;
+padding-bottom: 3%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    text-align: center;
+}
+
+.options {
+    justify-content: space-evenly;
+}
+
+.option {
+    border:var(--tertiary) 25px solid;
+    padding: 2%;
+    width: 20%;
+    height: 300px;
+}
+
+.white-bg {
+    background-color: var(--tertiary);
+
+}
+
+.bottom {
+    padding-bottom: 10%;
+    font-size: 2em;
+}
+
+
+footer {
+    height: 20%;
+    background-color: var(--secondary);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+button {
+    background-color: var(--primary);
+    color: var(--tertiary);
+    border: none; 
+    font-size: 2em; 
+    margin-top: 1%;
+    padding: 40px;
+    border-radius: 90px;
+    font-weight:bold;
+}
+
+button:hover {
+    background-color: var(--accent1);
+    color: var(--font);
+}
