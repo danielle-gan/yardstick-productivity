@@ -146,3 +146,34 @@ button:hover {
     background-color: var(--accent1);
     color: var(--font);
 }
+
+
+form {
+    margin-top:10%;
+}
+
+input {
+    /* color: var(--tertiary); */
+    background-color: var(--tertiary);
+}
+
+label {
+    font-size: 2em;
+    margin-top: 0px;
+}
+
+input {
+    width: 500px;
+    height: 2em;
+}
+
+
+.icon-button {
+    height: 10px;
+    border-radius: 20px;
+    font-size: 1.5em;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 5%;
+}
