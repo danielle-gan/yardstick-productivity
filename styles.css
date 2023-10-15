@@ -1,9 +1,9 @@
 :root {
     --primary: #9D5E76;
-    --secondary: #d1b1bF;
+    --secondary: #D1B1BF;
     --tertiary: #F6ECF0;
     --accent1: #E79A7C;
-    --font: #3a2b30;
+    --font: #3A2B30;
 }
 
 body {
@@ -18,10 +18,14 @@ header {
     background-color: var(--primary);
     margin: 0;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 h1 {
     font-size: 5em;
+    margin: .1em;
 }
 
 h2 {
@@ -41,13 +45,40 @@ p {
 
 li {
     text-align: left;
-    font-size: 2em;
-    margin-top: 5px;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.ml-10 {
+    margin-left: 10%;
+}
+
+.mr-10 {
+    margin-right: 10%;
+}
+
+.mr-5 {
+    margin-right:5%;
+}
+
+.ml-5 {
+    margin-left: 5%;
 }
 
 .section {
-margin-top: 3%;
-padding-bottom: 3%;
+margin-top: -1%;
+/* padding-bottom: 5%; */
+}
+
+.border {
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+}
+
+.mt-7 {
+    margin-top: 7%;
 }
 
 .flex {
@@ -57,25 +88,37 @@ padding-bottom: 3%;
     text-align: center;
 }
 
+.close {
+    justify-content: space-around;
+}
+
 .options {
     justify-content: space-evenly;
 }
 
 .option {
     border:var(--tertiary) 25px solid;
+    border-radius: 20px;
     padding: 2%;
     width: 20%;
     height: 300px;
 }
 
+.option:hover {
+    background-color: var(--primary);
+}
+
 .white-bg {
     background-color: var(--tertiary);
-
 }
 
 .bottom {
     padding-bottom: 10%;
-    font-size: 2em;
+    font-size: 1.5em;
+}
+
+.graphic{
+    height: 20em;
 }
 
 
