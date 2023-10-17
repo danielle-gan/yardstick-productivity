@@ -250,3 +250,7 @@ label {
     color: inherit; /* Inherit the color from the parent */
     cursor: default; /* Change the cursor to default (arrow) */
 }
+
+#questions-form {
+    display: none; /* Initially hide the form */
+}
