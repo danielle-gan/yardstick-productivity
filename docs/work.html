@@ -18,49 +18,78 @@
 
     <main>
 
-        <div class="flex">
-            <form onsubmit="saveProjectFocus(event)">
-
-                <label for="projectFocus">What project are you focusing on today?</label><br>
-                <div class="flex">
-                    <input type="text" id="projectFocus" name="projectFocus"><br><br>
-                    <button class="icon-button" onclick="displayContent('projectFocus')">🔒</button><br><br>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close-modal">&times;</span>
+                <h2>Get Started</h2>
+                <div class="question" id="question-1">
+                    <p>What project are you focusing on today?</p>
+                    <input type="text" id="project-input" class="modal-input">
+                    <br />
+                    <button id="next-button" class="next-button">Next</button>
                 </div>
-                <label for="stickyTask1">Short Sticky Task 1:</label><br>
-                <div class="flex">
-                <input type="text" id="stickyTask1" name="stickyTask1"><br><br>
-                <button class="icon-button" onclick="displayContent('projectFocus')">🔒</button><br><br>
+                <div class="question" id="question-2">
+                    <p>What are your three sticky tasks for today?</p>
+                    <input type="text" id="task-1" class="modal-input">
+                    <input type="text" id="task-2" class="modal-input">
+                    <input type="text" id="task-3" class="modal-input">
+                    <br />
+                    <button id="next-button-2" class="next-button">Next</button>
+                </div>
+                <div class="question" id="question-3">
+                    <p>What are your three maintenance tasks for today?</p>
+                    <input type="text" id="maintenance-1" class="modal-input">
+                    <input type="text" id="maintenance-2" class="modal-input">
+                    <input type="text" id="maintenance-3" class="modal-input">
+                    <br />
+                    <button id="submit-button" class="submit-button">Submit</button>
+                </div>
             </div>
-                <label for="stickyTask2">Short Sticky Task 2:</label><br>
-                <div class="flex">
-                <input type="text" id="stickyTask2" name="stickyTask2"><br><br>
-                <button class="icon-button" onclick="displayContent('projectFocus')">🔒</button><br><br>
-            </div>
-                <label for="stickyTask3">Short Sticky Task 3:</label><br>
-                <div class="flex">
-                <input type="text" id="stickyTask3" name="stickyTask3"><br><br>
-                <button class="icon-button" onclick="displayContent('projectFocus')">🔒</button><br><br>
-            </div>
-                <label for="maintenanceTask1">Maintenance Task 1:</label><br>
-                <div class="flex">
-                <input type="text" id="maintenanceTask1" name="maintenanceTask1"><br><br>
-                <button class="icon-button" onclick="displayContent('projectFocus')">🔒</button><br><br>
-            </div>
-                <label for="maintenanceTask2">Maintenance Task 2:</label><br>
-                <div class="flex">
-                <input type="text" id="maintenanceTask2" name="maintenanceTask2"><br><br>
-                <button class="icon-button" onclick="displayContent('projectFocus')">🔒</button><br><br>
-            </div>
-                <label for="maintenanceTask3">Maintenance Task 3:</label><br>
-                <div class="flex">
-                <input type="text" id="maintenanceTask3" name="maintenanceTask3"><br><br>
-                <button class="icon-button" onclick="displayContent('projectFocus')">🔒</button><br><br>
-            </div>
-                <input type="submit" value="Submit">
-            </form>
-
         </div>
 
+        <form>
+            <div class="flex">
+                <div id="answersContainer">
+
+                    <div class="flex space-around">
+                        <h2><u>Project Focus:</u> </h2>
+                    </div>
+                    <div class="flex">
+                        <ul class="ml-40">
+                            <li class="no-bullet"><input type="checkbox" id="project-output" class="checkbox"> <label
+                                    for="project-output">Project</label></li>
+                        </ul>
+                    </div>
+                    <div class="flex">
+                        <h2><u>Sticky Tasks</u> </h2>
+                    </div>
+                    <div class="flex">
+                        <ul class="ml-40">
+                            <li class="no-bullet"><input type="checkbox" id="task1" class="checkbox"> <label
+                                    for="task1">Task 1</label></li>
+                            <li class="no-bullet"><input type="checkbox" id="task2" class="checkbox"> <label
+                                    for="task2">Task 2</label></li>
+                            <li class="no-bullet"><input type="checkbox" id="task3" class="checkbox"> <label
+                                    for="task3">Task 3</label></li>
+                        </ul>
+                    </div>
+                    <div class="flex">
+                        <h2><u>Maintenance Tasks:</u> </h2>
+                    </div>
+                    <div class="flex">
+                        <ul class="ml-40">
+                            <li class="no-bullet"><input type="checkbox" id="maintenance1" class="checkbox"> <label
+                                    for="maintenance1">Maintenance 1</label></li>
+                            <li class="no-bullet"><input type="checkbox" id="maintenance2" class="checkbox"> <label
+                                    for="maintenance2">Maintenance 2</label></li>
+                            <li class="no-bullet"><input type="checkbox" id="maintenance3" class="checkbox"> <label
+                                    for="maintenance3">Maintenance 3</label></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </form>
         <script src="work.js"></script>
 
     </main>
