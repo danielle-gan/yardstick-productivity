@@ -47,7 +47,7 @@ submitButton.addEventListener('click', () => {
   document.getElementById('maintenance3').nextElementSibling.textContent = maintenance3Answer;
   
   // Reset form input values
-  form.reset();
+  questionsForm.reset();
 
   // Close the modal
   modal.style.display = 'none';
