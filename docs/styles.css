@@ -216,9 +216,16 @@ footer {
 
   .modal-input {
     margin-top: 1em;
-    /* height: 3em; */
     width: 35rem;
     font-size: 3em;
+  }
+
+  .shorter {
+    padding-bottom: 40px;
+  }
+
+  .shorter input {
+    margin-top: .5em;
   }
 
 #answersContainer {
