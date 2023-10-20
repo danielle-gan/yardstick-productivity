@@ -6,6 +6,10 @@
     --font: #3A2B30;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--secondary);
     color: var(--font);
