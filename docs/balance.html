@@ -11,6 +11,65 @@
         <h1> The 3-3-3 Rule for Well-Being </h1>
         <!-- Will probably turn into a nav -->
     </header>
+
+    <audio id="achievement-sound" src="tone.wav"></audio>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <h2>Get Started</h2>
+            <div class="question" id="question-1">
+                <p>What 3 physical activities will you complete?</p>
+                <input type="text" id="phys-1" class="modal-input">
+                <input type="text" id="phys-2" class="modal-input">
+                <input type="text" id="phys-3" class="modal-input">
+                <br />
+                <button id="next-button" class="next-button">Next</button>
+            </div>
+            <div class="question" id="question-2">
+                <p>What are you grateful for today</p>
+                <input type="text" id="mind-1" class="modal-input">
+                <p>What is the most important thing right now?</p>
+                <input type="text" id="mind-2" class="modal-input">
+                <p>What can you let go of?</p>
+                <input type="text" id="mind-3" class="modal-input">
+                <br />
+                <button id="submit-button" class="submit-button">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <form id="questions-form" class="flex">
+        <div class="flex">
+            <div id="answersContainer">
+                <div class="flex">
+                    <h2><u>Physical Activities</u> </h2>
+                </div>
+                <div class="flex">
+                    <ul class="ml-40">
+                        <li class="no-bullet"><input type="checkbox" id="phys1" class="checkbox"> <label
+                                for="phys1">Task 1</label></li>
+                        <li class="no-bullet"><input type="checkbox" id="phys2" class="checkbox"> <label
+                                for="phys2">Task 2</label></li>
+                        <li class="no-bullet"><input type="checkbox" id="phys3" class="checkbox"> <label
+                                for="phys3">Task 3</label></li>
+                    </ul>
+                </div>
+                <div class="flex">
+                    <h2><u>Mindfulness Responses:</u> </h2>
+                </div>
+                <div class="flex">
+                    <ul class="ml-40">
+                        <li class="no-bullet" id="mind1"></li>
+                        <li class="no-bullet" id="mind2"></li>
+                        <li class="no-bullet" id="mind3"></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </form>
+    <script src="balance.js"></script>
+    <script src="achieve.js"></script>
     
 </body>
 </html>
