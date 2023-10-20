@@ -32,6 +32,13 @@ h1 {
 h2 {
     font-size: 4em;
     justify-self: center;
+    margin-bottom: 1%;
+    margin-top: 0;
+}
+
+.header-padding{
+    padding-top: 50px;
+    margin-top: 3%;
 }
 
 h3 {
@@ -47,8 +54,20 @@ p {
 li {
     text-align: left;
     font-size: 1.5rem;
-    margin-top: 15px;
+    margin-top: 0;
     margin-left: 15px;
+}
+
+nav a{
+   margin: 0 20px;
+   text-decoration: none;
+   color: var(--tertiary);
+   font-size: 2rem;
+   transition: .3s;
+}
+
+nav a:hover{
+    color: var(--secondary);
 }
 
 .ml-10 {
@@ -91,6 +110,13 @@ margin-top: -1%;
     justify-content: center;
     align-items : center;
     text-align: center;
+    width: 100%;
+}
+
+
+.space-around {
+    width: 100%;
+    justify-content: space-around;
 }
 
 .options {
@@ -229,19 +255,24 @@ footer {
   }
 
 #answersContainer {
-    margin-top: 10%;
+    margin-top: 8%;
     width: 100%;
 }
 
 .no-bullet {
     list-style-type: none;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .checkbox {
     transform: scale(3.5);
 }
 
+
+ul {
+margin-top: 0;
+
+}
 .ml-40{
     width: 100%;
     margin-left: 40%;
@@ -253,11 +284,30 @@ label {
 }
 
 .no-style {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit the color from the parent */
-    cursor: default; /* Change the cursor to default (arrow) */
+    text-decoration: none;
+    color: inherit; 
+    cursor: default; 
 }
 
 #questions-form {
     display: none; /* Initially hide the form */
+}
+
+#goal1{
+    margin-top: 0;
+    padding-top:0;
+}
+
+.goal {
+    width: 100%;
+}
+
+.goal li {
+    width: 100%;
+    margin-top: 1%;
+    margin-left: 45%;
+}
+
+.goal label {
+    margin-left: 40px;
 }
