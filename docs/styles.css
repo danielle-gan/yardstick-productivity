@@ -6,164 +6,10 @@
     --font: #3A2B30;
 }
 
-@media (min-width: 300px) {
-    h1 {
-        font-size: 2em;
-        /* margin: .1em; */
-    }
-
-    h2, h3, p, li {
-        font-size: 1em;
-    }
-
-    button {
-        font-size: 1em;
-    }
-
-    .graphic{
-        height: 5em;
-    }
-
-    .section {
-        margin-top: -1%;
-    }
-
-    .flex {
-        display: flex;
-        justify-content: center;
-        align-items : center;
-        text-align: center;
-        width: 100%;
-    }
-        
-    .space-around {
-        width: 100%;
-        justify-content: space-around;
-    }
-
-    .options {
-        justify-content: space-evenly;
-    }
-
-    .option {
-        border:var(--tertiary) 5px solid;
-        border-radius: 2px;
-        padding: 2%;
-        width: 25%;
-        height: 300px;
-        transition: .3s;
-    }
-    
-    .option:hover {
-        background-color: var(--primary);
-    }
-
-    .first {
-        padding-top: 20%;
-    }
-
-    .last {
-        padding-bottom: 15%;
-    }
-
-    footer {
-        height: 10%;
-        background-color: var(--secondary);
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-    }
-
-    .ignite-button {
-        background-color: var(--primary);
-        color: var(--tertiary);
-        border: none; 
-        font-size: 1em; 
-        margin-top: 25%;
-        padding: 10px;
-        border-radius: 45px;
-        font-weight:bold;
-        transition: .3s;
-    }
-    
-    .ignite-button:hover {
-        background-color: var(--accent1);
-        color: var(--font);
-    }
-    
-    .modal {
-        margin-top: 10%;
-        margin-left: 20%;
-        width: 100%;
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-      
-    .modal-content {
-        background-color: var(--tertiary);
-        padding: 20px 80px 100px 80px;
-        border-radius: 15px;
-        width: 50%;
-        text-align: center;
-      }
-      
-    .close {
-        float: right;
-        cursor: pointer;
-        font-size: 4em;
-      }
-    
-    .next-button {
-        background-color: var(--primary);
-        color: var(--tertiary);
-        font-size: 2em;
-        border-radius: 90px;
-        font-weight: bold;
-        transition: .3s;
-        padding: 0 1em;
-        margin-top: 1em;
-      }
-    
-    .next-button:hover {
-        background-color: var(--accent1);
-        color: var(--font);
-    }
-    
-    .submit-button {
-        background-color: var(--primary);
-        color: var(--tertiary);
-        font-size: 2em;
-        border-radius: 90px;
-        font-weight: bold;
-        transition: .3s;
-        margin-top: 4em;
-      }
-    
-    .submit-button:hover {
-        background-color: var(--accent1);
-        color: var(--font);
-    }
-
-      .modal-input {
-        margin-top: 1em;
-        width: 5rem;
-        font-size: .5em;
-    }
-    
-    #answersContainer {
-        margin-top: 8%;
-        width: 100%;
-    }
-
-}
-
 @media (min-width: 700px) {
 
     h1 {
-        font-size: 5em;
+        font-size: 2em;
         margin: .1em;
     }
     
@@ -172,6 +18,10 @@
         justify-self: center;
         margin-bottom: 1%;
         margin-top: 0;
+    }
+
+    .first {
+        padding-top: 5%;
     }
     
     .header-padding{
@@ -188,6 +38,7 @@
     p {
         font-size: 2em;
     }
+
     
     .margin-p {
         margin-left: 5%;
@@ -218,6 +69,19 @@
     .graphic{
         height: 20em;
     }
+
+    .options {
+        display: flex;
+    }
+
+    .option {
+        border:var(--tertiary) 15px solid;
+        border-radius: 25px;
+        padding: 2%;
+        width: 25%;
+        height: 300px;
+        transition: .3s;
+    }
     
     footer {
         height: 20%;
@@ -239,7 +103,6 @@
         font-weight:bold;
         transition: .3s;
     }
-    
     .modal {
         margin-top: 10%;
         margin-left: 20%;
@@ -249,66 +112,20 @@
         justify-content: center;
         align-items: center;
     }
-      
+
     .modal-content {
         background-color: var(--tertiary);
         padding: 20px 80px 100px 80px;
         border-radius: 15px;
         width: 50%;
         text-align: center;
-      }
-      
-    .close {
-        float: right;
-        cursor: pointer;
-        font-size: 4em;
-      }
-    
-    .next-button {
-        background-color: var(--primary);
-        color: var(--tertiary);
-        font-size: 2em;
-        border-radius: 90px;
-        font-weight: bold;
-        transition: .3s;
-        padding: 0 1em;
-        margin-top: 1em;
-      }
-    
-    .next-button:hover {
-        background-color: var(--accent1);
-        color: var(--font);
-    }
-    
-    .submit-button {
-        background-color: var(--primary);
-        color: var(--tertiary);
-        font-size: 2em;
-        border-radius: 90px;
-        font-weight: bold;
-        transition: .3s;
-        padding: 0 1em;
-        margin-top: 1em;
-      }
-    
-    .submit-button:hover {
-        background-color: var(--accent1);
-        color: var(--font);
     }
 
-      .modal-input {
+    .modal-input {
         margin-top: 1em;
-        width: 35rem;
-        font-size: 3em;
-      }
-    
-      .shorter {
-        padding-bottom: 40px;
-      }
-    
-      .shorter input {
-        margin-top: .5em;
-      }
+        width: 20rem;
+        font-size: 1.5em;
+    }
     
     #answersContainer {
         margin-top: 8%;
@@ -361,14 +178,49 @@
     
 
 @media (min-width: 1200px) {
+    h1 {
+        font-size: 4em;
+        margin: .1em;
+    }
+    
+    h2 {
+        font-size: 4em;
+        justify-self: center;
+        margin-bottom: 1%;
+        margin-top: 0;
+    }
+
+    nav a {
+        font-size: 2rem;
+    }
+
+    li {
+        font-size: 2em;
+    }
 
     p {
         margin: 0% 15%;
         font-size: 2em;
     }
+
+    .option {
+        border:var(--tertiary) 25px solid;
+        border-radius: 25px;
+        padding: 2%;
+        width: 25%;
+        height: 300px;
+        transition: .3s;
+    }
+
+    .modal-input {
+        margin-top: 1em;
+        width: 35rem;
+        font-size: 3em;
+    }
+    
 }
 
-
+/* STYLING FOR ALL SCREEN SIZES */
 html {
     scroll-behavior: smooth;
 }
@@ -392,16 +244,14 @@ header {
 }
 
 nav a{
-    margin: 0 20px;
     text-decoration: none;
     color: var(--tertiary);
-    font-size: 2rem;
     transition: .3s;
- }
+}
  
- nav a:hover{
+nav a:hover{
      color: var(--secondary);
- }
+}
  
  .ml-10 {
     margin-left: 10%;
@@ -423,32 +273,64 @@ nav a{
     margin-left: 0;
 }
 
-
-
 .border {
     width: 100%;
     height: 20%;
     overflow: hidden;
 }
 
-
-
 .white-bg {
     background-color: var(--tertiary);
 }
-
 
 .no-style {
     text-decoration: none;
     color: inherit; 
     cursor: default; 
 }
+  
+.close {
+    float: right;
+    cursor: pointer;
+    font-size: 4em;
+  }
+
+.next-button {
+    background-color: var(--primary);
+    color: var(--tertiary);
+    font-size: 2em;
+    border-radius: 90px;
+    font-weight: bold;
+    transition: .3s;
+    padding: 0 1em;
+    margin-top: 1em;
+  }
+
+.next-button:hover {
+    background-color: var(--accent1);
+    color: var(--font);
+}
+
+.submit-button {
+    background-color: var(--primary);
+    color: var(--tertiary);
+    font-size: 2em;
+    border-radius: 90px;
+    font-weight: bold;
+    transition: .3s;
+    padding: 0 1em;
+    margin-top: 1em;
+  }
+
+.submit-button:hover {
+    background-color: var(--accent1);
+    color: var(--font);
+}
 
 #questions-form {
     display: none; /* Initially hide the form */
 }
 
-      
 .question {
     display: none;
   }
@@ -456,3 +338,20 @@ nav a{
   #question-1 {
     display: block;
   }
+
+.modal {
+    margin-top: 200px;
+    margin-left: 5%;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background-color: var(--tertiary);
+    padding: 20px 80px 100px 80px;
+    border-radius: 15px;
+    width: 50%;
+    text-align: center;
+}

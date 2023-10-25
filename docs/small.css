@@ -1,0 +1,173 @@
+:root {
+    --primary: #9D5E76;
+    --secondary: #D1B1BF;
+    --tertiary: #F6ECF0;
+    --accent1: #E79A7C;
+    --font: #3A2B30;
+}
+
+@media (min-width: 200px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2,
+    h3,
+    p,
+    li {
+        font-size: 1em;
+    }
+
+    li {
+        margin-left: 0;
+        font-size: 1em;
+    }
+
+    ul {
+        padding-left: 10%;
+    }
+
+    nav a {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+
+    .options {
+        display: block;
+    }
+
+    button {
+        font-size: 1em;
+    }
+
+    .graphic {
+        height: 10em;
+    }
+
+    .section {
+        margin-top: -1%;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .space-around {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .options {
+        justify-content: space-evenly;
+    }
+
+    .option {
+        border: var(--tertiary) 5px solid;
+        border-radius: 2px;
+        padding: 2%;
+        width: 25%;
+        height: 300px;
+        transition: .3s;
+    }
+
+    .option:hover {
+        background-color: var(--primary);
+    }
+
+    .first {
+        padding-top: 20%;
+    }
+
+    .last {
+        padding-bottom: 15%;
+    }
+
+    footer {
+        height: 10%;
+        background-color: var(--secondary);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .ignite-button {
+        background-color: var(--primary);
+        color: var(--tertiary);
+        border: none;
+        font-size: 1em;
+        margin-top: 25%;
+        padding: 10px;
+        border-radius: 45px;
+        font-weight: bold;
+        transition: .3s;
+    }
+
+    .ignite-button:hover {
+        background-color: var(--accent1);
+        color: var(--font);
+    }
+
+    #answersContainer {
+        margin-top: 8%;
+        width: 100%;
+    }
+
+
+
+    .modal-content {
+        background-color: var(--tertiary);
+        padding: 20px 80px 100px 80px;
+        border-radius: 15px;
+        width: 50%;
+        text-align: center;
+    }
+
+    .close {
+        float: right;
+        cursor: pointer;
+        font-size: 4em;
+    }
+
+    .next-button {
+        background-color: var(--primary);
+        color: var(--tertiary);
+        font-size: 2em;
+        border-radius: 90px;
+        font-weight: bold;
+        transition: .3s;
+        padding: 0 1em;
+        margin-top: 1em;
+    }
+
+    .next-button:hover {
+        background-color: var(--accent1);
+        color: var(--font);
+    }
+
+    .submit-button {
+        background-color: var(--primary);
+        color: var(--tertiary);
+        font-size: 2em;
+        border-radius: 90px;
+        font-weight: bold;
+        transition: .3s;
+        margin-top: 4em;
+    }
+
+    .submit-button:hover {
+        background-color: var(--accent1);
+        color: var(--font);
+    }
+
+    .modal-input {
+        margin-top: 1em;
+        width: 10rem;
+        font-size: .7em;
+    }
+
+}
